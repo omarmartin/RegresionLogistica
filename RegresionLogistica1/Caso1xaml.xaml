@@ -1,0 +1,50 @@
+﻿<Window x:Class="RegresionLogistica1.Caso1xaml"
+      TextElement.FontWeight="Medium"
+        TextElement.FontSize="14"
+        FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+        Title="Regresión logística: caso 1" Height="600" Width="800">
+    <Grid Background="#FF15B0D4" UseLayoutRounding="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="276*"/>
+            <ColumnDefinition Width="57*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="74*"/>
+            <RowDefinition Height="43*"/>
+        </Grid.RowDefinitions>
+        <materialDesign:PackIcon Kind="user" Grid.Column="1" Height="38" Margin="170.2,18,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851"/>
+        <TextBox x:Name="id" materialDesign:HintAssist.Hint="ID"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="48" Margin="211.2,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <materialDesign:PackIcon Kind="Texture" Grid.Column="1" Height="38" Margin="43.2,39.4,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="texture" materialDesign:HintAssist.Hint="Texture"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="49" Margin="77.2,28.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <materialDesign:PackIcon Kind="Shape" Grid.Column="1" Height="38" Margin="280.2,39,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="concavity" materialDesign:HintAssist.Hint="Concavity"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="49" Margin="327.2,28,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <materialDesign:PackIcon Kind="ViewCompact" Grid.Column="1" Height="38" Margin="280.2,109,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.RowSpan="2"/>
+        <TextBox x:Name="compactness" materialDesign:HintAssist.Hint="Compactness"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="327.2,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.RowSpan="2"/>
+        <materialDesign:PackIcon Kind="Equal" Grid.Column="1" Height="38" Margin="280.2,159.4,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="symmetry" materialDesign:HintAssist.Hint="Symmetry"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="327.2,145.4,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <materialDesign:PackIcon Kind="ImageArea" Grid.Column="1" Height="38" Margin="43.2,159.4,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="area" materialDesign:HintAssist.Hint="Area"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="77.2,139.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <materialDesign:PackIcon Kind="Circle" Grid.Column="1" Height="38" Margin="280.2,217.4,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="fractalDimension" materialDesign:HintAssist.Hint="Fractal Dimension"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="48" Margin="327.2,207.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="diagnosis" materialDesign:HintAssist.Hint="DIAGNOSIS"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="235.2,50.8,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="calcular" Content="Calcular" HorizontalAlignment="Left" Margin="70.2,60.8,0,0" VerticalAlignment="Top" Width="127" Height="42"  Background="#FF145219" Foreground="#FFFEFEFE" FontSize="20" Grid.Row="2" Grid.Column="1" Click="calcular_Click"/>
+        <Button Content="Caso 2" Grid.Column="2" HorizontalAlignment="Left" Margin="10.2,24,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <materialDesign:PackIcon Kind="Radius" Grid.Column="1" Height="38" Margin="43.2,109,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.RowSpan="2"/>
+        <TextBox x:Name="radius" materialDesign:HintAssist.Hint="Radius"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="49" Margin="77.2,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.RowSpan="2"/>
+        <materialDesign:PackIcon Kind="TapeMeasure" Grid.Column="1" Height="38" Margin="45.2,96.4,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="perimeter" materialDesign:HintAssist.Hint="Perimeter"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="49" Margin="77.2,85.4,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+        <materialDesign:PackIcon Kind="CircleMedium" Grid.Column="1" Height="38" Margin="280.2,100.4,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="concavePoints" materialDesign:HintAssist.Hint="Concave points"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="327.2,86.4,0,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120"/>
+        <materialDesign:PackIcon Kind="LetterS" Grid.Column="1" Height="38" Margin="43.2,217.4,0,0" Width="27" Foreground="{Binding ElementName=idVendedorTxtBk, Path=BorderBrush}" RenderTransformOrigin="6.304,-2.851" Grid.Row="1"/>
+        <TextBox x:Name="smoothness" materialDesign:HintAssist.Hint="Smoothness"  materialDesign:HintAssist.IsFloating="True" Grid.Column="1" HorizontalAlignment="Left" Height="58" Margin="77.2,197.4,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+</Window>
